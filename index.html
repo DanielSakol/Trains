@@ -4,10 +4,94 @@
 <head>
 <meta charset="utf-8">
 <title>Train Sched</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<script src= "script.js"></script>
+<!--<link rel="stylesheet" type="text/css" href="style.css">-->
+<!--jquery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!--firebase-->
+<script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+<!--moment.js-->
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 </head>
 
+<body>
+    <div class="jumbotron">
+        <h1 class="text-center">Train Schedule</h1>
+    </div>
 
+    <table class="table">
+        <thead class= "thead-dark">
+            <tr>
+            <th data-field="col">Train</th>
+            <th data-field="col">Destination</th>
+            <th data-field="col">Arrival Frequency</th>
+            <th data-field="col">Minutes Away</th>
+            <th data-field="col">Next Arrival</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Johnny</th>
+                <td>San Antone</td>
+                <td id= "freq"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">Express Kundalini</th>
+                <td>Higher Planes</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">Lou Reed</th>
+                <td>The City</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">Love Train</th>
+                <td>All Over the World</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">Last Train</th>
+                <td>Clarksville</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">The ELO</th>
+                <td>London</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">Crazy Train</th>
+                <td>Off the Rails</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <!--train divs-->
+    <div id= "arrival-frequency"></div>
+
+
+
+
+
+<!--link js to load FIRST-->
+<script src= "script.js"></script>
+</body>
 
 </html>
